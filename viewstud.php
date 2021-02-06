@@ -30,6 +30,8 @@ if (mysqli_error($conn)) {
         <div class='alert alert-success'>Successfully Deleted</div>
     <?php } else if (isset($_GET['messagedeletefail']) == true) { ?>
         <div class='alert alert-success'>Failed Deleted</div>
+    <?php } else if (isset($_GET['msgupdate']) == true) { ?>
+        <div class='alert alert-success'>Successfully Updated</div>
     <?php } ?>
     <div class="portlet light bordered">
         <table class="table table-striped table-bordered table-hover table-checkable order-column table-auto-width" id="table_list">
@@ -61,10 +63,12 @@ if (mysqli_error($conn)) {
                         $_SESSION['accesslevel'] == 'admin'
                     ) {
                         echo "<td>" . "<a href='updatestud.php?stu_id=$id'>
-				<i type='button'  class='btn btn-primary fa fa-edit'></i></a> " .
+				<i type='button'  class='btn btn-primary fa fa-edit'>Edit</i></a> " .
                             "<a href='#'
 				onclick='confirmdelete($id)'><button type='button' class='btn btn-danger'>
-				<i class= 'fa fa-trash danger'  style='color:white'></i></button></a> " . "</td>";
+				<i class= 'fa fa-trash danger'  style='color:white'>Delete</i></button></a> " .
+                            "<a href='updatestudpassword4admin.php?stu_id=$id'>
+                <i type='button' class='btn btn-dark fa fa-edit'>Edit password</i></a>" . "</td>";
                     }
                     echo "</tr>";
                 }

@@ -24,8 +24,6 @@ if (isset($_POST['stu_name']) && isset($_POST['stu_email'])) {
  stu_email= '$stu_email',
  stu_hpnum=    '$stu_hpnum',
  stu_imagefile='$stuimage',
- stu_password='$stu_password',
- stu_accesslevel='$level'
 WHERE stu_id='$id'";
     //data dari borang html
 
