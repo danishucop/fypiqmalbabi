@@ -26,6 +26,9 @@ include("headerstud.template.php");
                     <div class="portlet light bordered">
                         <div class="container-md">
                             <a href="viewlect4stud.php">View Lecturer </a><br>
+                            <a href="studpending.php">My pending status Meeting</a><br>
+                            <a href="studaccept.php">My accepted status Meeting</a><br>
+                            <a href="studreject.php">My rejected status Meeting </a><br>
                             <a href="studprofileupdate.php">Edit Profile</a><br>
                             <a href="updatestudpassword.php">Edit Password</a><br>
                             <a href="logout.php">Log out</a><br>

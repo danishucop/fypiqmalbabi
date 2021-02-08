@@ -23,11 +23,10 @@ include("headerlect.template.php");
                     <h5 class="card-title text-center">Welcome lect <?php echo $_SESSION['lect_name'] ?></h5>
                     <div class="portlet light bordered">
                         <div class="container-md">
-                            <a href="forminsert.php">Insert record</a><br>
-                            <a href="searchadmin.php">Update/Delete record</a><br>
-                            <a href="viewuser.php">View User</a><br>
-                            <a href="viewuserorder.php">View Customer Order</a><br>
-                            <a href="editadmin.php">Edit Admin Profile</a><br>
+                            <a href="lectprofileupdate.php">Update Profile</a><br>
+                            <a href="lectpending.php">My Pending Meeting</a><br>
+                            <a href="lectaccept.php">My Accept Meeting</a><br>
+                            <a href="lectreject.php">My Reject Meeting</a><br>
                             <a href="logout.php">Log out</a><br>
                         </div>
                     </div>
